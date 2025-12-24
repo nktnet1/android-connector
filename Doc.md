@@ -10,7 +10,7 @@ Use the <a href="./connector">connector</a> library to subscribe and receive pus
 
 ## Customizable Dialog
 
-One of the main purpose of UnifiedPush is to let the users chose the way they receive their notifications. If many distributors are installed on the system, you will need to ask the users what they prefere to use. The <a href="./connector_ui">connector-ui</a> library offers a dialog that ask what distributor to use before registering your application.
+One of the main purpose of UnifiedPush is to let the users chose the way they receive their notifications. If many distributors are installed on the system, you will need to ask the users what they preferred to use. The <a href="./connector_ui">connector-ui</a> library offers a dialog that ask what distributor to use before registering your application.
 
 ## Embedded FCM Distributor
 
