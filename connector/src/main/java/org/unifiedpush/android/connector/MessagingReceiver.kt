@@ -56,7 +56,7 @@ abstract class MessagingReceiver : BroadcastReceiver() {
 
     /**
      * A new endpoint is to be used for sending push messages. The new endpoint
-     * should be send to the application server, and the app should sync for
+     * should be sent to the application server, and the app should sync for
      * missing notifications.
      */
     abstract fun onNewEndpoint(
