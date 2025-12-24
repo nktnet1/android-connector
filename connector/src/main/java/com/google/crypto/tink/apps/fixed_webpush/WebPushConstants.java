@@ -53,21 +53,21 @@ final class WebPushConstants {
 
   // the byte 0x2 separating the payload and the padding
   static final byte PADDING_DELIMITER_BYTE = (byte) 2;
-  static final int PADDING_DELIMETER_SIZE = 1;
+  static final int PADDING_DELIMITER_SIZE = 1;
   static final int DEFAULT_PADDING_SIZE = 0;
   static final int TAG_SIZE = 16;
   //   * content coding header:   86
-  //   * padding delimeter:        1
+  //   * padding delimiter:        1
   //   * AES-GCM tag size:        16
   //   * Total:                  103
   static final int CIPHERTEXT_OVERHEAD =
-      CONTENT_CODING_HEADER_SIZE + PADDING_DELIMETER_SIZE + DEFAULT_PADDING_SIZE + TAG_SIZE;
+      CONTENT_CODING_HEADER_SIZE + PADDING_DELIMITER_SIZE + DEFAULT_PADDING_SIZE + TAG_SIZE;
 
   // https://www.rfc-editor.org/rfc/rfc8188#section-2.1
   // > rs: Values smaller than 18 are invalid.
   //
   // * min data length:   1
-  // * padding delimeter: 1
+  // * padding delimiter: 1
   // * AES-GCM tag size:  16
   static final int MIN_RS = 18;
   static final int MAX_CIPHERTEXT_SIZE = 4096;
