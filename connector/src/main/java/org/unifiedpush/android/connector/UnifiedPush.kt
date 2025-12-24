@@ -125,7 +125,7 @@ import kotlin.jvm.Throws
  *
  * // Get a list of distributors that are available
  * val distributors = UnifiedPush.getDistributors(context)
- * // select one or ask the user which distributor to use, eg. with a dialog
+ * // select one or ask the user which distributor to use, e.g. with a dialog
  * val userDistrib = yourFunc(distributors)
  * // save the distributor
  * UnifiedPush.saveDistributor(context, userDistrib)
@@ -184,7 +184,7 @@ object UnifiedPush {
      * If there was a distributor but it has been removed, [MessagingReceiver.onUnregistered] will be called for all subscribed instances.
      *
      * @param [context] To interact with the shared preferences and send broadcast intents.
-     * @param [instance] Registration instance. Can be used to get multiple registrations, eg. for multi-account support.
+     * @param [instance] Registration instance. Can be used to get multiple registrations, e.g. for multi-account support.
      * @param [messageForDistributor] May be shown by the distributor UI to identify this registration.
      * @param [vapid] VAPID public key ([RFC8292](https://www.rfc-editor.org/rfc/rfc8292)) base64url encoded of the uncompressed form (87 chars long).
      *
@@ -289,7 +289,7 @@ object UnifiedPush {
      * [MessagingReceiver.onUnregistered] won't be called after that request.
      *
      * @param [context] To interact with the shared preferences and send broadcast intents.
-     * @param [instance] Registration instance. Can be used to get multiple registrations, eg. for multi-account support.
+     * @param [instance] Registration instance. Can be used to get multiple registrations, e.g. for multi-account support.
      */
     @JvmStatic
     fun unregister(

@@ -66,7 +66,7 @@ abstract class MessagingReceiver : BroadcastReceiver() {
     )
 
     /**
-     * The registration is not possible, eg. no network, depending on the reason,
+     * The registration is not possible, e.g. no network, depending on the reason,
      * you can try to register again directly.
      */
     abstract fun onRegistrationFailed(

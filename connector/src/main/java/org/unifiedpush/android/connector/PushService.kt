@@ -38,7 +38,7 @@ abstract class PushService: Service() {
     abstract fun onMessage(message: PushMessage, instance: String)
 
     /**
-     * The registration is not possible, eg. no network, depending on the reason,
+     * The registration is not possible, e.g. no network, depending on the reason,
      * you can try to register again directly.
      */
     abstract fun onRegistrationFailed(reason: FailedReason, instance: String)
